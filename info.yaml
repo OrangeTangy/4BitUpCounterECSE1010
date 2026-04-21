@@ -4,7 +4,7 @@ project:
   title:        "4 Bit Synchronous Up Counter"      # Project title
   author:       "Tanay Anand, Ethan Bean"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "It is a 4 bit synchronous up counter that counts with a clock cycle of 1"      # One line description of what your project does
+  description:  "A 4 bit synchronous binary up counter built from JK flip flops. The design counts upward on each clock edge and outputs the count on Q0 through Q3."      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     1       # Clock frequency in Hz (or 0 if not applicable)
 
