@@ -1,12 +1,12 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     461947512064352257       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "4 Bit Synchronous Up Counter"      # Project title
+  wokwi_id:     346662028519146068       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "binary adder"      # Project title
   author:       "Tanay Anand, Ethan Bean"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A 4 bit synchronous binary up counter built from JK flip flops. The design counts upward on each clock edge and outputs the count on Q0 through Q3."      # One line description of what your project does
+  description:  "binary adder with carry where A+B+Cin = S + Cout"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     1       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -16,9 +16,9 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "CLK"
-  ui[1]: ""
-  ui[2]: ""
+  ui[0]: "A"
+  ui[1]: "B"
+  ui[2]: "Cin"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -26,10 +26,10 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "Q0"
-  uo[1]: "Q1"
-  uo[2]: "Q2"
-  uo[3]: "Q3"
+  uo[0]: "S"
+  uo[1]: "Cout"
+  uo[2]: ""
+  uo[3]: ""
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
